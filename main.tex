@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usepackage{rotating}
+\usetikzlibrary{snakes,automata,backgrounds,petri,fit}
+\usetikzlibrary{shapes.geometric}
+\usetikzlibrary{positioning}
+\usetikzlibrary{arrows}
+\usepackage{tikz-3dplot}
+\usepackage{listings}
+\usepackage{color} 
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage[section]{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+\usepackage{textcomp}
+\usepackage{import}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[font=footnotesize]{caption}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm,bindingoffset=0cm]{geometry}
+\renewcommand{\thealgorithm}{\arabic{section}.\arabic{algorithm}} 
+\newtheorem{theorem}{Теорема}[section]
+\newtheorem{remark}{Замечание}[section]
+\newtheorem{corollary}{Следствие}[section]
+\newtheorem{lemma}[theorem]{Лемма}
+\newtheorem{definition}{Определение}[section]
+\newtheorem{assumption}{Предположение}
+\newtheorem{observation}{Наблюдение}
+\newtheorem{task}{Задача}[]
+\DeclareMathOperator{\rank}{\textbf{rank}}
+\DeclareMathOperator{\tr}{tr}
+\renewcommand{\O}{\mathcal{O}}
+
+\usepackage[default,scale=0.95]{opensans}
+\renewcommand\seriesdefault{l}
+\renewcommand\mddefault{m}
+\renewcommand\bfdefault{m}% or \renewcommand\bfdefault{m}
+
+\numberwithin{equation}{section}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\title{Machine Learning on Big Data}
+\author{Шугаепов Ильнур 
+\\
+\small{VK.com} 
+\\
+\small{itmo.stud@gmail.com}}
+\date{}
+
+\begin{document}
+% {\fontfamily{cmss}\selectfont
+\maketitle
+
+\tableofcontents
+
+\section*{Введение}
+\import{sections/introduction/}{introduction.tex}
+ 
+\section{Introduction to Hadoop DFS and MapReduce}
+\import{sections/hadoop-map-reduce/}{hadoop_map_reduce.tex}
+
+\section{Apache Spark}
+
+\section{Spark SQL}
+
+\section{ML in Production (Logging, Model, Features, Deployment)}
+
+\section{Distributed Logistic Regression (Hashing, Parametric Server)}
+
+\section{Distributed kNN (LSH)}
+
+\section{Distributed GBDT}
+
+\section{Large Scale Collaborative Filtering (ALS)}
+
+\section{Spark MLlib Overview}
+
+\section{Online Learning}
+
+\section{Large Scale Hyperparameters Tuning + AutoML}
+
+\section{How to conduct AB Tests (Experiment Design, Execution, Analysis)}
+
+\section{Results Analysis ((Multiple) Hypothesis testing, Sensitivity, Power)}
+
+\section{Heterogeneous Treatment Effect}
+
+\nocite{*}
+
+\bibliographystyle{ugost2008ls}
+\bibliography{references}
+
+% \subsection{Домашние Задания}
+
+% \subsubsection{ML Service}
+% Реализовать рекомендательный сервис (с простым web интерфейсом). \\
+% Пример: Сервис рекомендации новостей. \\
+% Особенности:
+% \begin{itemize}
+%     \item Для обучения модели использовали открытый датасет Bing News. Новости из этого же датасета используются при демострации работы сервиса.
+%     \item Сервис позволяет проводить AB Тесты (есть система логирования и разделения трафика на экспериментальные группы на основе \texttt{user\_id})
+% \end{itemize}
+
+
+% \subsubsection{AB Test}
+% Можно будет предоставить часть логов эксперимента, который проводился на реальных пользователях VK. Данные анонимизированы. По логам нужно будет посчитать метрики и оценить стат. значимость результатов.
+
+% }
+\end{document}
