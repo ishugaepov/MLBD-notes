@@ -81,23 +81,25 @@
 \subimport{chapters/spark_sql/}{spark_sql.tex}
 
 \part{Машинное обучение на больших данных}
-\chapter{ML in Production (Logging, Model, Features, Deployment)}
+\chapter{Spark MLLib Overview}
 
-\chapter{Logistic Regression (Hashing, Parametric Server)}
+\chapter{Stochastic Gradient Descent, Linear Models, Neural Networks}
 
-\chapter{kNN (LSH)}
+\chapter{Hyperparameters Optimization}
 
-\chapter{GBDT}
+\chapter{Gradient Boosting Decision Tree}
+
+\chapter{Word2Vec, k-Nearest Neighbors} % (LSH)
 
 \chapter{Collaborative Filtering (ALS)}
 
-\chapter{LDA}
-
-\chapter{Spark MLlib Overview}
+\chapter{Latent Dirichlet Allocation}
 
 \chapter{Online Learning}
 
-\chapter{Hyperparameters Tuning + AutoML}
+\chapter{AutoML}
+
+\chapter{Crowdsourcing}
 
 \part{Проведение онлайн экспериментов}
 \chapter{How to conduct AB Tests (Experiment Design, Execution, Analysis)}
@@ -110,26 +112,6 @@
 
 \bibliographystyle{ugost2008ls}
 \bibliography{references}
-
-% \subsection{Домашние Задания}
-% Может делать практики/демонстрации в виде jupyter тетрадок, которые будут работать с вкшным кластером? С одной стороны хорошо, а с другой было бы еще лучше если бы был кластер, к которому у студентов был бы доступ (Наверное нужно сделать dockerfile, в котором будет все нужное)
-% Можно провести какой нибудь анонимный опрос в начале семестра, чтобы прощупать аудиторию
-% Лучше все таки сделать ДЗ!
-% Писать планы лекций
-% Может еще рассказать кратко про luigi и airflow?
-
-% \subsubsection{ML Service}
-% Реализовать рекомендательный сервис (с простым web интерфейсом). \\
-% Пример: Сервис рекомендации новостей. \\
-% Особенности:
-% \begin{itemize}
-%     \item Для обучения модели использовали открытый датасет Bing News. Новости из этого же датасета используются при демострации работы сервиса.
-%     \item Сервис позволяет проводить AB Тесты (есть система логирования и разделения трафика на экспериментальные группы на основе \texttt{user\_id})
-% \end{itemize}
-
-
-% \subsubsection{AB Test}
-% Можно будет предоставить часть логов эксперимента, который проводился на реальных пользователях VK. Данные анонимизированы. По логам нужно будет посчитать метрики и оценить стат. значимость результатов.
 
 % }
 \end{document}
