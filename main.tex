@@ -51,6 +51,7 @@
 \newcommand{\sectionbreak}{\clearpage}
 
 \usepackage[parfill]{parskip}
+\usepackage{bibunits}
 
 \title{Machine Learning on Big Data}
 \author{Шугаепов Ильнур 
@@ -73,7 +74,6 @@
 \chapter{Introduction to Hadoop and MapReduce}
 \subimport{chapters/hadoop_map_reduce/}{hadoop_map_reduce.tex}
 
-
 \chapter{Apache Spark}
 \subimport{chapters/apache_spark/}{apache_spark.tex}
 
@@ -81,25 +81,23 @@
 \subimport{chapters/spark_sql/}{spark_sql.tex}
 
 \part{Машинное обучение на больших данных}
-\chapter{Spark MLLib Overview}
+\chapter{Distributed ML Introduction}
+\subimport{chapters/distributed_ml_intro/}{distributed_ml_intro.tex}
 
-\chapter{Stochastic Gradient Descent, Linear Models, Neural Networks}
-
-\chapter{Hyperparameters Optimization}
+\chapter{Categorical Features in Large Scale ML}
+\subimport{chapters/sgd_logreg_nn/}{sgd_logreg_nn.tex}
 
 \chapter{Gradient Boosting Decision Tree}
+\subimport{chapters/gradient_boosting/}{gradient_boosting.tex}
 
-\chapter{Word2Vec, k-Nearest Neighbors} % (LSH)
+\chapter{Hyperparameters Optimization}
+\subimport{chapters/hyperparameters_optimization/}{hyperparameters_optimization.tex}
 
-\chapter{Collaborative Filtering (ALS)}
+\chapter{DNN Compression and Acceleration}
+\subimport{chapters/dnn_compression/}{dnn_compression.tex}
 
-\chapter{Latent Dirichlet Allocation}
-
-\chapter{Dimensionality Reduction}
-
-\chapter{Online Learning}
-
-\chapter{Algorithms on Graphs}
+\chapter{Recommender Systems}
+\subimport{chapters/recsys/}{recsys.tex}
 
 \part{Проведение онлайн экспериментов}
 \chapter{How to conduct AB Tests (Experiment Design, Execution, Analysis)}
@@ -108,10 +106,10 @@
 
 \chapter{Heterogeneous Treatment Effect}
 
-\nocite{*}
+% \nocite{*}
 
-\bibliographystyle{ugost2008ls}
-\bibliography{references}
+% \bibliographystyle{ugost2008ls}
+% \bibliography{references}
 
 % }
 \end{document}
