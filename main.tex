@@ -52,6 +52,8 @@
 
 \usepackage[parfill]{parskip}
 \usepackage{bibunits}
+\usepackage[lastexercise]{exercise}
+\counterwithin{Exercise}{chapter}
 
 \title{Machine Learning on Big Data}
 \author{Шугаепов Ильнур 
@@ -71,7 +73,7 @@
 \import{}{introduction.tex}
  
 \part{Методы и системы обработки больших данных}
-\chapter{Introduction to Hadoop and MapReduce}
+\chapter{Introduction to Hadoop DFS and MapReduce}
 \subimport{chapters/hadoop_map_reduce/}{hadoop_map_reduce.tex}
 
 \chapter{Apache Spark}
@@ -98,6 +100,9 @@
 
 \chapter{Recommender Systems}
 \subimport{chapters/recsys/}{recsys.tex}
+
+\chapter{Nearest Neighbors Search}
+\subimport{chapters/nearest_neighbor_search/}{nearest_neighbor_search.tex}
 
 \part{Проведение онлайн экспериментов}
 \chapter{How to conduct AB Tests (Experiment Design, Execution, Analysis)}
